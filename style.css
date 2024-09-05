@@ -3,3 +3,17 @@
     margin: 0;
     box-sizing: border-box;
 }
+ol{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width : 700px;
+    height: auto;
+    margin : 0 auto;
+    background: #fefefe;
+    padding :10px;
+    li{
+        background: #6b6b6b;
+        padding: 5px;
+    }
+}
