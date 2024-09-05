@@ -39,34 +39,59 @@ var playList = [
 
 
 
-function listRender() {
-    // if (!list) return; 
-    const list = document.createElement('ol')
+// function listRender() {
+//     // if (!list) return; 
+//     const list = document.createElement('ol')
 
-    list.innerHTML = ""; 
+//     list.innerHTML = ""; 
 
-    const fragment = document.createDocumentFragment();
+//     const fragment = document.createDocumentFragment();
 
-    playList.forEach((track, index) => {
-        let item = document.createElement('li');
+//     playList.forEach((track, index) => {
+//         let item = document.createElement('li');
 
-        const author = document.createElement('p');
-        author.textContent = track.author;
+//         const author = document.createElement('p');
+//         author.textContent = track.author;
 
-        const song = document.createElement('h2');
-        song.textContent = track.song;
-        song.setAttribute('index', index);
-        song.style.whiteSpace = 'nowrap'; 
+//         const song = document.createElement('h2');
+//         song.textContent = track.song;
+//         song.setAttribute('index', index);
+//         song.style.whiteSpace = 'nowrap'; 
         
-        item.appendChild(author);
-        item.appendChild(song);
+//         item.appendChild(author);
+//         item.appendChild(song);
 
-        list.appendChild(item);
-    });
+//         list.appendChild(item);
+//     });
 
 
 
-    document.body.appendChild(list)
+//     document.body.appendChild(list)
+// }
+
+// listRender();
+
+const header = document.createElement('header');
+const headerStyles = {
+    width : "100%",
+    maxWidth : "780px",
+    margin: "0 auto",
+    padding : "20px",
+    backgroundColor : "#eee"
 }
+for (let style in headerStyles) {
+    header.style[style] = headerStyles[style];
+}
+const button = document.createElement('button');
+button.title = "open";
+button.innerText = "open";
 
-listRender();
+header.appendChild(button)
+button.onclick = dialogRender()
+
+document.body.appendChild(header)
+
+
+function dialogRender(){
+
+}
