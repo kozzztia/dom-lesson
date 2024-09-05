@@ -2,8 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* color :#ff0000; */
 }
-body{
+/* body{
     width :100%;
     position: relative;
 }
@@ -22,14 +23,9 @@ ol {
         background: #6b6b6b;
         padding: 5px;
     }
-}
-
-/* header{
-    width :100%;
-    max-width : 780px;
-    margin: 0 auto;
-    padding : 20px;
 } */
-button {
-    position: relative;
+
+.open{
+    opacity: 1 !important;
+    transition: .5s;
 }
